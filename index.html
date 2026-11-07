@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>P&amp;J Restaurant</title>
+  <link rel="icon" href="files/Logo.jpg">
+   <link rel="stylesheet" href="bcs/bootstrap.min.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/theme.css"> <!-- black & gold theme (all pages) -->
+</head>
+<body>
+
+<!-- Mobile top bar + burger -->
+<header class="topbar d-lg-none">
+  <a href="index.html" class="brand"><img src="files/Logo.jpg" alt=""><span>P&amp;J</span></a>
+  <button class="burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav" aria-controls="mainNav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</header>
+
+<!-- Sidebar: fixed on desktop, slide-in menu on mobile -->
+<aside id="mainNav" class="sidebar offcanvas-lg offcanvas-start" tabindex="-1" aria-label="Main navigation">
+  <div class="sidebar-head">
+    <a href="index.html" class="brand"><img src="files/Logo.jpg" alt="P&amp;J Restaurant logo"><span>P&amp;J</span> Restaurant</a>
+    <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#mainNav" aria-label="Close menu"></button>
+  </div>
+  <div class="sidebar-body">
+    <nav class="navbar-nav">
+        <a href="index.html" class="nav-link active" aria-current="page"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span><span class="nav-text">Home</span></a>
+        <a href="menu.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7M3 3v5a3 3 0 0 0 6 0V3M6 10v11"/><path d="M17 21V3c-2.5 1.5-4 4-4 7.5V14h4"/></svg></span><span class="nav-text">Menu</span></a>
+        <a href="reservation.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="nav-text">Reserve</span></a>
+        <a href="cart.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg></span><span class="nav-text">Cart</span> <span id="cartCount" class="badge bg-warning text-dark">0</span></a>
+        <a href="contact.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="nav-text">Contact</span></a>
+        <a href="a.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><span class="nav-text">About us</span></a>
+        <a href="login.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><span class="nav-text">Login</span></a>
+    </nav>
+  </div>
+  <div class="sidebar-foot">
+    <a href="reservation.html" class="btn btn-warning btn-sm w-100 mb-3">Reserve a table</a>
+    <b>Find us</b><br>Malaya, Sto. Domingo,<br>Nueva Ecija
+  </div>
+</aside>
+
+
+<main>
+<section class="hero">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="hero-text col-lg-6">
+        <span class="eyebrow left">Welcome to P&amp;J</span>
+        <h1>Delicious Food,<br><em>Happy Moments.</em></h1>
+        <p class="lead">Enjoy freshly prepared meals, delicious drinks, and affordable food made especially for you.</p>
+        <div class="hero-buttons mt-4 d-flex flex-wrap gap-3">
+          <a href="menu.html" class="btn btn-warning btn-lg">View Menu</a>
+          <a href="reservation.html" class="btn btn-outline-dark btn-lg">Reserve a Table</a>
+        </div>
+        <div class="hero-stats">
+          <div><b data-count="32">0</b><span>Dishes</span></div>
+          <div><b data-count="5">0</b><span>Menus</span></div>
+          <div><b data-count="4">0</b><span>Ways to pay</span></div>
+        </div>
+      </div>
+      <div class="hero-image col-lg-6">
+        <div class="hero-emblem"><img src="files/Logo.jpg" alt="P&amp;J Restaurant"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="hairline">
+
+<section class="featured section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Our Favorites</span>
+      <h2>Crowd pleasers</h2>
+      <p>Try some of our customers' favorite dishes.</p>
+    </div>
+    <div class="food-container">
+      <div class="reveal" style="--d:.05s">
+        <div class="food-card card h-100">
+          <div class="overflow-hidden"><img src="files/burger.jpg" class="card-img-top" alt="Burger"></div>
+          <div class="card-body text-center">
+            <h3>Classic Burger</h3>
+            <p class="text-muted">Juicy beef burger with fresh vegetables.</p>
+            <strong class="badge bg-warning text-dark fs-6">₱129</strong>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.15s">
+        <div class="food-card card h-100">
+          <div class="overflow-hidden"><img src="files/pizza.jpg" class="card-img-top" alt="Pizza"></div>
+          <div class="card-body text-center">
+            <h3>Cheese Pizza</h3>
+            <p class="text-muted">Hot and cheesy pizza with our special sauce.</p>
+            <strong class="badge bg-warning text-dark fs-6">₱249</strong>
+          </div>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.25s">
+        <div class="food-card card h-100">
+          <div class="overflow-hidden"><img src="files/pasta.jpg" class="card-img-top" alt="Pasta"></div>
+          <div class="card-body text-center">
+            <h3>Creamy Pasta</h3>
+            <p class="text-muted">Creamy pasta prepared with fresh ingredients.</p>
+            <strong class="badge bg-warning text-dark fs-6">₱159</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section pt-0" id="bestsellers">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Best Sellers</span>
+      <h2>What everyone is ordering</h2>
+      <p>The ranking updates the moment a new order is placed.</p>
+    </div>
+    <div class="sales reveal" id="salesChart">
+      <div class="sales-card surface">
+        <div class="sales-top">
+          <h3>Top 6 right now</h3>
+          <div class="sales-tools">
+            <span class="live-pill" id="liveDot" hidden><i></i>Live</span>
+            <div class="seg" id="metricSeg" role="group" aria-label="Chart metric">
+              <button type="button" class="on" data-m="units">Units</button>
+              <button type="button" data-m="revenue">Revenue</button>
+            </div>
+            <button type="button" id="demoOrder" class="btn btn-outline-dark sales-demo" title="Adds a random order so you can watch the chart react">+ Demo order</button>
+          </div>
+        </div>
+        <div class="sales-grid">
+          <div class="spotlight" id="spotlight">
+            <span class="crown"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"/></svg>Best seller</span>
+            <div class="spotlight-img" id="spotImg">🍽️</div>
+            <div class="spotlight-body">
+              <h4>—</h4>
+              <small></small>
+              <div class="spotlight-stats">
+                <div><b data-s="value" data-v="0">0</b><span data-s="label">units sold</span></div>
+                <div><b data-s="share">0%</b><span>of all sales</span></div>
+              </div>
+              <a href="menu.html" class="btn btn-warning btn-sm">Order it now</a>
+            </div>
+          </div>
+          <div class="rank-list" id="rankList" aria-label="Best selling products ranking"></div>
+        </div>
+        <p class="sales-foot"><span id="salesTotal"></span> · Starts from sample sales data; every order placed on this site adds to it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reserve-band">
+  <div class="container reveal">
+    <span class="eyebrow">Reservations</span>
+    <h2>Save your <span class="gold-text">table</span></h2>
+    <p>Dinner with family, a birthday, or a quiet coffee. Pick a date and time and we'll have it ready.</p>
+    <a href="reservation.html" class="btn btn-warning btn-lg">Reserve a Table</a>
+  </div>
+</section>
+</main>
+
+
+<footer>
+  <span class="foot-brand">P&amp;J Restaurant</span>
+  <p>© 2026 P&amp;J Restaurant. All Rights Reserved.</p>
+</footer>
+
+<script src="botjs/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/account.js"></script>
+<script src="js/sales.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

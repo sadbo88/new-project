@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>About | P&amp;J Restaurant</title>
+  <link rel="icon" href="files/Logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="bcs/bootstrap.min.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/theme.css"> <!-- black & gold theme (all pages) -->
+</head>
+<body>
+
+<!-- Mobile top bar + burger -->
+<header class="topbar d-lg-none">
+  <a href="index.html" class="brand"><img src="files/Logo.jpg" alt=""><span>P&amp;J</span></a>
+  <button class="burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav" aria-controls="mainNav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</header>
+
+<!-- Sidebar: fixed on desktop, slide-in menu on mobile -->
+<aside id="mainNav" class="sidebar offcanvas-lg offcanvas-start" tabindex="-1" aria-label="Main navigation">
+  <div class="sidebar-head">
+    <a href="index.html" class="brand"><img src="files/Logo.jpg" alt="P&amp;J Restaurant logo"><span>P&amp;J</span> Restaurant</a>
+    <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#mainNav" aria-label="Close menu"></button>
+  </div>
+  <div class="sidebar-body">
+    <nav class="navbar-nav">
+        <a href="index.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span><span class="nav-text">Home</span></a>
+        <a href="menu.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7M3 3v5a3 3 0 0 0 6 0V3M6 10v11"/><path d="M17 21V3c-2.5 1.5-4 4-4 7.5V14h4"/></svg></span><span class="nav-text">Menu</span></a>
+        <a href="reservation.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="nav-text">Reserve</span></a>
+        <a href="cart.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg></span><span class="nav-text">Cart</span> <span id="cartCount" class="badge bg-warning text-dark">0</span></a>
+        <a href="contact.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="nav-text">Contact</span></a>
+        <a href="a.html" class="nav-link active" aria-current="page"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><span class="nav-text">About us</span></a>
+        <a href="login.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><span class="nav-text">Login</span></a>
+    </nav>
+  </div>
+  <div class="sidebar-foot">
+    <a href="reservation.html" class="btn btn-warning btn-sm w-100 mb-3">Reserve a table</a>
+    <b>Find us</b><br>Malaya, Sto. Domingo,<br>Nueva Ecija
+  </div>
+</aside>
+
+
+<section class="about-hero">
+  <div class="container">
+    <span class="eyebrow">About us</span>
+    <h1>Good Food, <span class="gold-text">Good Company.</span></h1>
+    <p class="lead mx-auto mt-3" style="max-width: 620px;">At P&amp;J Restaurant, every dish is delicious, affordable, and made with care.</p>
+  </div>
+</section>
+
+<main>
+<!-- Our Story -->
+<section class="container section">
+  <div class="row align-items-center g-5">
+    <div class="col-lg-6 story-text reveal">
+      <span class="eyebrow left">Our Story</span>
+      <h2 class="mb-3">Food that brings <span class="gold-text">joy</span></h2>
+      <p>P&amp;J Restaurant started with a simple goal: to serve food that brings joy to every family and group of friends. We combine beloved Filipino dishes like Chicken Adobo and Sinigang with classic burgers, pizza, and pasta.</p>
+      <p>Every order is freshly prepared and delivered at the time and place you choose. To us, we don't just serve food, we serve a happy experience at the dining table.</p>
+      <a href="menu.html" class="btn btn-warning btn-lg mt-2">View Our Menu</a>
+    </div>
+    <div class="col-lg-6 text-center story-image reveal" style="--d:.15s">
+      <img src="files/Logo.jpg" alt="P&amp;J Restaurant" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose Us -->
+<section class="why-us section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Why us</span>
+      <h2>Why Choose <span class="gold-text">P&amp;J?</span></h2>
+      <p>Here's why our customers keep coming back.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4 reveal" style="--d:.05s">
+        <div class="about-card card h-100 text-center">
+          <div class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c1 3 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-3-1-5 1-9z"/></svg></div>
+          <h3 class="h4">Freshly Prepared</h3>
+          <p class="text-muted mb-0">Cooked only when you order, so it always arrives hot and delicious.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" style="--d:.15s">
+        <div class="about-card card h-100 text-center">
+          <div class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12V4h8l10 10-8 8L3 12z"/><circle cx="7.5" cy="8.5" r="1.2"/></svg></div>
+          <h3 class="h4">Affordable Prices</h3>
+          <p class="text-muted mb-0">Every meal is worth your money, from appetizers to desserts.</p>
+        </div>
+      </div>
+      <div class="col-md-4 reveal" style="--d:.25s">
+        <div class="about-card card h-100 text-center">
+          <div class="about-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6h11v10H2zM13 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="1.8"/><circle cx="16" cy="18" r="1.8"/></svg></div>
+          <h3 class="h4">Delivery On Time</h3>
+          <p class="text-muted mb-0">You choose the date, time, and place. We take care of the delivery.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="container section">
+  <div class="row g-4">
+    <div class="col-md-6 reveal">
+      <div class="mv-card h-100">
+        <h3>Our Mission</h3>
+        <p class="text-muted mb-0">To deliver delicious, high-quality, and affordable food that brings joy to every customer with every order.</p>
+      </div>
+    </div>
+    <div class="col-md-6 reveal" style="--d:.12s">
+      <div class="mv-card h-100">
+        <h3>Our Vision</h3>
+        <p class="text-muted mb-0">To become the community's favorite place to eat, known for great taste, genuine care, and friendly service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to action -->
+<section class="cta">
+  <div class="container reveal">
+    <h2>Feeling <span class="gold-text">hungry?</span></h2>
+    <p class="text-muted mb-4">Order now and we'll deliver it to you, or save a table and dine in.</p>
+    <a href="menu.html" class="btn btn-warning btn-lg me-2">Order Now</a>
+    <a href="reservation.html" class="btn btn-outline-dark btn-lg me-2">Reserve a Table</a>
+    <a href="contact.html" class="btn btn-outline-dark btn-lg">Contact Us</a>
+  </div>
+</section>
+</main>
+
+
+<footer>
+  <span class="foot-brand">P&amp;J Restaurant</span>
+  <p>© 2026 P&amp;J Restaurant. All Rights Reserved.</p>
+</footer>
+
+<script src="botjs/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/account.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>

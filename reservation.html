@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Reserve a Table | P&amp;J Restaurant</title>
+  <link rel="icon" href="files/Logo.jpg">
+  <link rel="stylesheet" href="bcs/bootstrap.min.css"> <!-- bootstrap -->
+  <link rel="stylesheet" href="css/theme.css"> <!-- black & gold theme (all pages) -->
+</head>
+<body>
+
+<!-- Mobile top bar + burger -->
+<header class="topbar d-lg-none">
+  <a href="index.html" class="brand"><img src="files/Logo.jpg" alt=""><span>P&amp;J</span></a>
+  <button class="burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#mainNav" aria-controls="mainNav" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+</header>
+
+<!-- Sidebar: fixed on desktop, slide-in menu on mobile -->
+<aside id="mainNav" class="sidebar offcanvas-lg offcanvas-start" tabindex="-1" aria-label="Main navigation">
+  <div class="sidebar-head">
+    <a href="index.html" class="brand"><img src="files/Logo.jpg" alt="P&amp;J Restaurant logo"><span>P&amp;J</span> Restaurant</a>
+    <button type="button" class="btn-close d-lg-none" data-bs-dismiss="offcanvas" data-bs-target="#mainNav" aria-label="Close menu"></button>
+  </div>
+  <div class="sidebar-body">
+    <nav class="navbar-nav">
+        <a href="index.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></span><span class="nav-text">Home</span></a>
+        <a href="menu.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3v7M3 3v5a3 3 0 0 0 6 0V3M6 10v11"/><path d="M17 21V3c-2.5 1.5-4 4-4 7.5V14h4"/></svg></span><span class="nav-text">Menu</span></a>
+        <a href="reservation.html" class="nav-link active" aria-current="page"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><span class="nav-text">Reserve</span></a>
+        <a href="cart.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/></svg></span><span class="nav-text">Cart</span> <span id="cartCount" class="badge bg-warning text-dark">0</span></a>
+        <a href="contact.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><span class="nav-text">Contact</span></a>
+        <a href="a.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg></span><span class="nav-text">About us</span></a>
+        <a href="login.html" class="nav-link"><span class="nav-ico" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg></span><span class="nav-text">Login</span></a>
+    </nav>
+  </div>
+  <div class="sidebar-foot">
+    <a href="reservation.html" class="btn btn-warning btn-sm w-100 mb-3">Reserve a table</a>
+    <b>Find us</b><br>Malaya, Sto. Domingo,<br>Nueva Ecija
+  </div>
+</aside>
+
+
+<section class="page-hero">
+  <span class="eyebrow">Reservations</span>
+  <h1>Reserve a <span class="gold-text">Table</span></h1>
+  <p>Choose your date, party size and time. We'll hold your table.</p>
+</section>
+
+<main class="res-wrap">
+  <div class="res-card">
+    <!-- Booking form -->
+    <div id="resFormWrap">
+      <h2>Book your table</h2>
+      <p class="sub">It takes less than a minute.</p>
+
+      <form id="resForm" novalidate>
+        <div class="step-label"><i>1</i> Your details</div>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label class="form-label" for="resName">Full name</label>
+            <input type="text" id="resName" class="form-control" autocomplete="name" placeholder="Juan Dela Cruz">
+            <span class="field-err" data-err="name"></span>
+          </div>
+          <div class="col-sm-6">
+            <label class="form-label" for="resPhone">Phone</label>
+            <input type="tel" id="resPhone" class="form-control" autocomplete="tel" placeholder="0912 345 6789">
+            <span class="field-err" data-err="phone"></span>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="resEmail">Email <span class="text-muted text-lowercase fw-normal">(optional)</span></label>
+            <input type="email" id="resEmail" class="form-control" autocomplete="email" placeholder="you@email.com">
+            <span class="field-err" data-err="email"></span>
+          </div>
+        </div>
+
+        <div class="step-label"><i>2</i> Date &amp; guests</div>
+        <div class="row g-3 align-items-end">
+          <div class="col-sm-6">
+            <label class="form-label" for="resDate">Date</label>
+            <input type="date" id="resDate" class="form-control">
+            <span class="field-err" data-err="date"></span>
+          </div>
+          <div class="col-sm-6">
+            <span class="form-label d-block">Guests</span>
+            <div class="party">
+              <div class="qty">
+                <button type="button" class="btn btn-outline-dark btn-sm" id="partyMinus" aria-label="Fewer guests">−</button>
+                <span class="qty-num" id="partyNum" aria-live="polite">2</span>
+                <button type="button" class="btn btn-outline-dark btn-sm" id="partyPlus" aria-label="More guests">+</button>
+              </div>
+              <span class="party-hint" id="partyHint"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="step-label"><i>3</i> Pick a time</div>
+        <div class="slots" id="resSlots" role="group" aria-label="Available times"></div>
+        <span class="field-err" data-err="slot"></span>
+
+        <div class="step-label"><i>4</i> Anything else?</div>
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label class="form-label" for="resOccasion">Occasion</label>
+            <select id="resOccasion" class="form-select">
+              <option value="">Just dining</option>
+              <option>Birthday</option>
+              <option>Anniversary</option>
+              <option>Family gathering</option>
+              <option>Date night</option>
+              <option>Business meal</option>
+            </select>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="resNotes">Special requests</label>
+            <textarea id="resNotes" class="form-control" rows="3" placeholder="High chair, window seat, allergies…"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-warning btn-lg w-100 mt-4">Confirm reservation</button>
+      </form>
+    </div>
+
+    <!-- Confirmation -->
+    <div id="resDone" hidden></div>
+  </div>
+
+  <aside class="res-side">
+    <div class="res-info">
+      <h3>Good to know</h3>
+      <ul>
+        <li><span>Seatings</span><b id="resHours">—</b></li>
+        <li><span>Largest group</span><b id="resMax">—</b></li>
+        <li><span>Where</span><b>Malaya, Sto. Domingo</b></li>
+        <li><span>Questions</span><b><a href="tel:09123456789">0912-345-6789</a></b></li>
+      </ul>
+    </div>
+    <div class="res-info">
+      <h3>Your reservations</h3>
+      <div class="my-res" id="myRes"></div>
+    </div>
+  </aside>
+</main>
+
+
+<footer>
+  <span class="foot-brand">P&amp;J Restaurant</span>
+  <p>© 2026 P&amp;J Restaurant. All Rights Reserved.</p>
+</footer>
+
+<script src="botjs/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/account.js"></script>
+<script src="js/reservation.js"></script>
+<script src="js/ui.js"></script>
+</body>
+</html>
